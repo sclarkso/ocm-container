@@ -7,7 +7,7 @@ fi
 
 source env.source
 
-sudo docker run -it --rm \
+sudo podman run -it --rm \
 -e "OFFLINE_ACCESS_TOKEN=${OFFLINE_ACCESS_TOKEN}" \
 -e "OCM_USER=${OCM_USER}" \
 ocm-container /bin/bash ## -c "/container-setup/login.sh $@ && /container-setup/bash-ps1-wrap.sh"
