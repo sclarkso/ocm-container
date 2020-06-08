@@ -15,7 +15,7 @@ if [ "x${osv4client}" == "x" ]; then
     exit 1
 fi
 
-time sudo docker build --no-cache \
+time sudo podman build --no-cache \
   --build-arg osv4client=${osv4client} \
   -t ocm-container .
 
